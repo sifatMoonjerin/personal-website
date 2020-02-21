@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+
+body{
+    padding: 0;
+}
+
+/*  navbar  */
+nav{
+    background-color: #67AECE;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+nav a:hover{
+    background-color: #4f87a1;
+}
+
+
+/*    Portrait     */
+@media screen and (orientation:portrait) {
+    nav ul{
+        justify-content: space-evenly;
+    }
+}

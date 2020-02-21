@@ -3,8 +3,10 @@
 }
 
 body{
+    width: 100%;
     font-family: 'Roboto';
     padding: 0;
+    margin: 0;
 }
 
 /*  navbar  */
@@ -14,7 +16,8 @@ nav{
     background-color: #67AECE;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
+    margin: 0;
 }
 
 nav ul{
@@ -35,10 +38,108 @@ nav a:hover{
     background-color: #4f87a1;
 }
 
+/*    General    */
 
-/*    Portrait     */
+.rose-highlight{
+    color: #E52A6F;
+    font-size: 40px;
+}
+
+p{
+    color: gray;
+    text-align: justify;
+    padding: 20px 0px 30px;
+    font-size: 16px;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.half-block{
+    padding: 5%;
+    width: 30%;
+    height: 50%;
+    
+}
+
+.img-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-block img{
+    width: 100%;
+}
+
+.btn-link{
+    color: white;
+    text-decoration: none;
+    background-color: #E52A6F;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.btn-link:hover{
+    background-color: #af2054;
+}
+
+
+
+/*     Home Page     */
+
+.home-page{
+    background-image: url("images/background/header-bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*     Biography Page      */
+
+.biography-page{
+    background-image: url("images/background/biography-bg.png");
+    background-size: cover;
+}
+
+/*     Latest-Work-Page       */
+
+.latest-work-page{
+    background-image: url("images/background/latest-work-bg.png");
+    background-size: cover;
+}
+
+/*     Feedback-Page       */
+
+.feedback-page{
+    background-image: url("images/background/footer-bg.png");
+    background-size: cover;
+}
+
+
+/*    Portrait Mode   */
 @media screen and (orientation:portrait) {
     nav ul{
         justify-content: space-evenly;
     }
+    .half-block{
+        padding: 5%;
+        width: 80%;
+        height: 40%;
+    }
+    .home-page{
+        flex-direction: column-reverse;
+    }
+    .img-block{
+        align-items: flex-end;
+    }
+    .img-block img{
+        width: 50%;
+    }
+
 }

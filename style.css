@@ -63,6 +63,7 @@ section{
     padding: 5%;
     width: 30%;
     height: 50%;
+    overflow: auto;
     
 }
 
@@ -73,7 +74,7 @@ section{
 }
 
 .img-block img{
-    width: 100%;
+    width: 75%;
 }
 
 .btn-link{
@@ -105,6 +106,9 @@ section{
 .biography-page{
     background-image: url("images/background/biography-bg.png");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*     Latest-Work-Page       */
@@ -127,19 +131,23 @@ section{
     nav ul{
         justify-content: space-evenly;
     }
+    p{
+        padding: 5px 0px 10px;
+        font-size: 14px;
+    }
     .half-block{
-        padding: 5%;
+        padding: 0;
         width: 80%;
         height: 40%;
+    }
+    .img-block img{
+        width: 50%;
     }
     .home-page{
         flex-direction: column-reverse;
     }
-    .img-block{
-        align-items: flex-end;
-    }
-    .img-block img{
-        width: 50%;
+    .biography-page{
+        flex-direction: column;
     }
 
 }

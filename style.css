@@ -56,7 +56,8 @@ section{
     height: 100vh;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    text-align: center;
 }
 
 .half-block{
@@ -64,7 +65,7 @@ section{
     width: 30%;
     height: 50%;
     overflow: auto;
-    
+    text-align: left;
 }
 
 .img-block{
@@ -88,7 +89,6 @@ section{
 .btn-link:hover{
     background-color: #af2054;
 }
-
 
 
 /*     Home Page     */
@@ -116,6 +116,23 @@ section{
 .latest-work-page{
     background-image: url("images/background/latest-work-bg.png");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.work-list{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+}
+.work-list img{
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px gray;
 }
 
 /*     Feedback-Page       */
@@ -132,7 +149,7 @@ section{
         justify-content: space-evenly;
     }
     p{
-        padding: 5px 0px 10px;
+        padding: 5px 0px 15px;
         font-size: 14px;
     }
     .half-block{
@@ -143,11 +160,21 @@ section{
     .img-block img{
         width: 50%;
     }
+    .page-heading{
+        padding: 40px;
+    }
     .home-page{
         flex-direction: column-reverse;
     }
     .biography-page{
         flex-direction: column;
+    }
+    .work-list{
+        flex-direction: column;
+        height: 80%;
+    }
+    .work-list img{
+        width: 50%;
     }
 
 }

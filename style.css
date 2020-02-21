@@ -8,8 +8,13 @@ body{
 }
 
 /*  navbar  */
+
+
 nav{
     background-color: #67AECE;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
 nav ul{

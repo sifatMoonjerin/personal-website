@@ -1,10 +1,11 @@
 *{
     margin: 0;
+    font-family: 'Roboto';
 }
 
 body{
     width: 100%;
-    font-family: 'Roboto';
+    
     padding: 0;
     margin: 0;
 }
@@ -45,7 +46,7 @@ nav a:hover{
     font-size: 40px;
 }
 
-p{
+.half-block p{
     color: gray;
     text-align: justify;
     padding: 20px 0px 30px;
@@ -63,7 +64,7 @@ section{
 .half-block{
     padding: 5%;
     width: 30%;
-    height: 50%;
+    height: 60%;
     overflow: auto;
     text-align: left;
 }
@@ -83,7 +84,10 @@ section{
     text-decoration: none;
     background-color: #E52A6F;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .btn-link:hover{
@@ -133,6 +137,12 @@ section{
     width: 30%;
     border-radius: 5px;
     box-shadow: 1px 1px 10px gray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.work-list img:hover{
+    transform: scale(1.05);
 }
 
 /*     Feedback-Page       */
@@ -140,7 +150,52 @@ section{
 .feedback-page{
     background-image: url("images/background/footer-bg.png");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.client{
+    width: 60%;
+    height: 20%;
+    margin: 20px 20px 10px;
+}
+.client-title{
+    font-size: 14px;
+    color: gray;
+}
+.client-quote{
+    font-size: 16px;
+    margin: 20px;
+}
+
+/*     Message     */
+.message-box{
+    width: 35%;
+    padding: 15px 0px;
+    
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gray;
+}
+.input-field{
+    width: 90%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px dotted #4f87a1;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+/*      footer      */
+footer p{
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+}
+
 
 
 /*    Portrait Mode   */
@@ -154,14 +209,14 @@ section{
     }
     .half-block{
         padding: 0;
-        width: 80%;
-        height: 40%;
+        width: 90%;
+        height: 50%;
+    }
+    .img{
+        height: 35%
     }
     .img-block img{
-        width: 50%;
-    }
-    .page-heading{
-        padding: 40px;
+        width: 45%;
     }
     .home-page{
         flex-direction: column-reverse;
@@ -175,6 +230,20 @@ section{
     }
     .work-list img{
         width: 50%;
+    }
+    .client{
+        width: 80%;
+        height: 20%;
+        margin: 20px;
+    }
+    .client-quote{
+        font-size: 16px;
+        margin: 0px;
+    }
+    .message-box{
+        width: 80%;
+        padding: 10px 0;
+        
     }
 
 }

@@ -19,6 +19,7 @@ nav{
     top: 0;
     width: 100%;
     margin: 0;
+    z-index: 99;
 }
 
 nav ul{
@@ -174,7 +175,6 @@ section{
 .message-box{
     width: 35%;
     padding: 15px 0px;
-    
     border-radius: 10px;
     box-shadow: 1px 1px 10px gray;
 }
@@ -186,6 +186,14 @@ section{
     border-bottom: 1.5px dotted #4f87a1;
     margin-bottom: 10px;
     font-size: 16px;
+}
+
+/*      Social Link      */
+.social-menu{
+    width: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -200,10 +208,12 @@ footer p{
 
 /*    Portrait Mode   */
 @media screen and (orientation:portrait) {
+    /*   navbar   */
     nav ul{
         justify-content: space-evenly;
     }
-    p{
+    /*    General    */
+    .half-block p{
         padding: 5px 0px 15px;
         font-size: 14px;
     }
@@ -218,12 +228,15 @@ footer p{
     .img-block img{
         width: 45%;
     }
+    /*     home-page     */
     .home-page{
         flex-direction: column-reverse;
     }
+    /*     bio-page     */
     .biography-page{
         flex-direction: column;
     }
+    /*     work-page     */
     .work-list{
         flex-direction: column;
         height: 80%;
@@ -231,6 +244,7 @@ footer p{
     .work-list img{
         width: 50%;
     }
+    /*    feedback-page     */
     .client{
         width: 80%;
         height: 20%;
